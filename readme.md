@@ -8,9 +8,9 @@
     # visudo
     
 ## Post Guide
-  1. Install xtools and vim before you start: (HIGHLY RECOMMEND)
+  1. Install xtools, vim, and base-devel: **HIGHLY RECOMMEND**
     
-    # sudo xbps-install xtools vim
+    # sudo xbps-install xtools vim base-devel
 
   2. Setup other repositories for firmware and possible drivers:
     
