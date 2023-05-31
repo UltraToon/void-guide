@@ -83,7 +83,7 @@
     # flatpak install flatseal
   ### [ **Now Reboot** ]
     
-## Desktop Guide (Make sure to install a gui term and browser)
+## Desktop Guide (Install GUI Terminal and Browser!)
   1. Setup steam, lutris, wine, and gamemode:
     
     # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
