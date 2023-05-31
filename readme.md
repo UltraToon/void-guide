@@ -70,7 +70,7 @@
     
     # xi kwayland # FOR KDE ONLY
     
-  9. Setup pipewire-pulse from the [docs](https://docs.voidlinux.org/config/media/pipewire.html) and install easyeffects for better mic:
+  9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html) and install easyeffects for better mic:
   
     # xi easyeffects
     
@@ -83,3 +83,8 @@
   ### [ **Now Reboot** ]
     
 ## Desktop Guide (Make sure to install a gui term and browser)
+  1. Setup steam, lutris, wine
+    
+    # xi steam lutris wine wine-32bit
+  
+  2. Follow [lutris docs](https://github.com/lutris/docs)
