@@ -74,12 +74,12 @@
   
     # xi easyeffects
     
-  10. Setup flatpak with flatseal to fix permissions:
+  10. Setup flatpak and flatseal:
   
     # xi flatpak
     # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     # sudo reboot
     # flatpak install flatseal
-    
+  > Reboot
     
 ## Desktop Guide (Make sure to install a gui term and browser)
