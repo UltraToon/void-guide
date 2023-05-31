@@ -84,12 +84,16 @@
   ### [ **Now Reboot** ]
     
 ## Desktop Guide (Install GUI Terminal and Browser!)
-  1. Setup steam, lutris, wine, and gamemode:
+  1. Install fonts and emojis:
+    
+    # xi noto-fonts-emoji noto-fonts-ttf noto-fonts-ttf-extra
+    
+  2. Setup steam, lutris, wine, and gamemode:
     
     # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
   
-  2. Set up ESYNC as shown on [lutris docs](https://github.com/lutris/docs).
+  3. Set up ESYNC as shown on [lutris docs](https://github.com/lutris/docs).
   
-  3. Install ProtonUpQT and configure lutris-wine and proton-ge:
+  4. Install ProtonUpQT and configure lutris-wine and proton-ge:
     
     # flatpak install flathub net.davidotek.pupgui2
