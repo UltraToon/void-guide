@@ -14,6 +14,5 @@
   2. Setup cronjobs
     ```
     xbps-install cronie
-    
     sudo vim /etc/cron.weekly/fstrim
     ```
