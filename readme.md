@@ -3,10 +3,10 @@
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
   3. Add user and visudo it since void installer wont work
     
-    ```
+    
     useradd -m -G input,audio,video,bluetooth,wheel,storage ivan
     visudo
-    ```
+    
 ## Post Guide
   1. Setup other repositories for firmware and possible drivers
     
@@ -16,4 +16,19 @@
     
     
     xbps-install cronie
+    
     sudo vim /etc/cron.weekly/fstrim
+    <------------------------------------->
+    #!/bin/sh
+
+    fstrim /
+    <------------------------------------->
+    
+    sudo vim /etc/cron.weekly/makewhatis
+    <------------------------------------->
+    #!/bin/sh
+    
+    makewhatis /usr/share/man
+    <------------------------------------->
+    
+  3
