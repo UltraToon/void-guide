@@ -83,12 +83,12 @@
   ### [ **Now Reboot** ]
     
 ## Desktop Guide (Make sure to install a gui term and browser)
-  1. Setup steam, lutris, wine
+  1. Setup steam, lutris, wine, and gamemode:
     
-    # xi steam lutris wine wine-devel wine-32bit winetricks
+    # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
   
-  2. Follow [lutris docs](https://github.com/lutris/docs) (Mainly ESYNC)
+  2. Follow [lutris docs](https://github.com/lutris/docs):(Mainly ESYNC)
   
-  4. Install custom proton and wine builds with ProtonUpQT
+  4. Install custom proton and wine builds with ProtonUpQT:
     
     # flatpak install flathub net.davidotek.pupgui2
