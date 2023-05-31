@@ -8,17 +8,16 @@
     # visudo
     
 ## Post Guide
-  1. Install xtools and vim before you start (HIGHLY RECOMMEND)
+  1. Install xtools and vim before you start: (HIGHLY RECOMMEND)
     
     # sudo xbps-install xtools vim
 
-  2. Setup other repositories for firmware and possible drivers
-    
+  2. Setup other repositories for firmware and possible drivers:
     
     # xi void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
     # xi intel-ucode
     
-  3. Setup cronjobs
+  3. Setup cronjobs:
     
     
     # xi cronie
@@ -37,22 +36,22 @@
     makewhatis /usr/share/man
     <------------------------------------->
     
-  4. Install NTP time sync
+  4. Install NTP time sync:
     
     # xi NTP
     # sudo ln -s /etc/sv/ntpd /var/service/
     
-  5. Install dbus and elogind
+  5. Install dbus and elogind:
   
     # xi dbus elogind
     # sudo ln -s /etc/sv/dbus /var/service/
     
-  6. Setup graphics and Xorg (skip xorg if wayland)
+  6. Setup graphics and Xorg: (skip xorg if wayland)
     
     # xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau
     # xi xorg-minimal xf86-video-amdgpu
     
-  7. Import bashrc from dotfiles and setup bash
+  7. Import bashrc from dotfiles and setup bash:
     
     # xi git
     # curl https://raw.githubusercontent.com/UltraToon/dotfiles/main/.bashrc -o ~/.bashrc
@@ -71,11 +70,11 @@
     
     # xi kwayland # FOR KDE ONLY
     
-  9. Setup pipewire-pulse from the [docs](https://docs.voidlinux.org/config/media/pipewire.html) and install easyeffects for better mic
+  9. Setup pipewire-pulse from the [docs](https://docs.voidlinux.org/config/media/pipewire.html) and install easyeffects for better mic:
   
     # xi easyeffects
     
-  10. Setup flatpak with flatseal to fix permissions
+  10. Setup flatpak with flatseal to fix permissions:
   
     # xi flatpak
     # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
