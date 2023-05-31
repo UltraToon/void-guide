@@ -85,6 +85,6 @@
 ## Desktop Guide (Make sure to install a gui term and browser)
   1. Setup steam, lutris, wine
     
-    # xi steam lutris wine wine-32bit
+    # xi steam lutris wine wine-devel wine-32bit winetricks
   
   2. Follow [lutris docs](https://github.com/lutris/docs)
