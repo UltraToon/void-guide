@@ -61,7 +61,6 @@
   8. **OPTIONAL** Install and set these settings up if you are doing wayland:
     
     # vim ~/.config/bash/envrc
-    
     <------------------------------------->
     export QT_QPA_PLATFORM="wayland-egl"
     export ELM_DISPLAY="wl"
@@ -91,10 +90,18 @@
   2. Setup steam, lutris, wine, and gamemode:
     
     # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
-  **NOTE: Make sure to enable "disable desktop effects" in advanced lutris settings if using a DE**
   
   3. Set up ESYNC as shown on [lutris docs](https://github.com/lutris/docs).
   
   4. Install ProtonUpQT and configure lutris-wine and proton-ge:
     
     # flatpak install flathub net.davidotek.pupgui2
+  
+  5. **OPTIONAL** Setup automatic compositing toggle with gamemode on DE's
+  
+    # sudo vim /usr/share/gamemode/gamemode.ini
+    <------------------------------------->
+    [custom]
+    start=qdbus org.kde.KWin /Compositor suspend
+    end=qdbus org.kde.KWin /Compositor resume
+  
