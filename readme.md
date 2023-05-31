@@ -71,7 +71,7 @@
     
     # xi kwayland # FOR KDE ONLY
     
-  9. Setup pipewire-pulse from the docs and install easyeffects for better mic
+  9. Setup pipewire-pulse from the [docs](https://docs.voidlinux.org/config/media/pipewire.html) and install easyeffects for better mic
   
     # xi easyeffects
     
