@@ -87,7 +87,7 @@
     
     # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
   
-  2. Follow [lutris docs](https://github.com/lutris/docs):(Mainly ESYNC)
+  2. Follow [lutris docs](https://github.com/lutris/docs):
   
   4. Install custom proton and wine builds with ProtonUpQT:
     
