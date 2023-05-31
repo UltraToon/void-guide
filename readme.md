@@ -91,6 +91,7 @@
   2. Setup steam, lutris, wine, and gamemode:
     
     # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
+  **NOTE: Make sure to enable "disable desktop effects" in advanced lutris settings if using a DE
   
   3. Set up ESYNC as shown on [lutris docs](https://github.com/lutris/docs).
   
