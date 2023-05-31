@@ -87,8 +87,8 @@
     
     # xi steam lutris wine wine-devel wine-32bit winetricks gamemode
   
-  2. Follow [lutris docs](https://github.com/lutris/docs):
+  2. Set up ESYNC as shown on [lutris docs](https://github.com/lutris/docs).
   
-  4. Install custom proton and wine builds with ProtonUpQT:
+  3. Install custom proton and wine builds with ProtonUpQT:
     
     # flatpak install flathub net.davidotek.pupgui2
