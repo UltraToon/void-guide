@@ -10,12 +10,10 @@
 ## Post Guide
   1. Setup other repositories for firmware and possible drivers
     
-    ```
+    
     sudo xbps-install void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
-    ```
   2. Setup cronjobs
     
-    ```
+    
     xbps-install cronie
     sudo vim /etc/cron.weekly/fstrim
-    ```
