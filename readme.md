@@ -80,6 +80,6 @@
     # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     # sudo reboot
     # flatpak install flatseal
-  > **Now Reboot**
+  ### **Now Reboot**
     
 ## Desktop Guide (Make sure to install a gui term and browser)
