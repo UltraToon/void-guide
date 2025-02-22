@@ -39,10 +39,15 @@
     export SDL_VIDEODRIVER="wayland"
     export MOZ_ENABLE_WAYLAND=1 # only for firefox
     <------------------------------------->
-    
-    # xi kwayland # FOR KDE ONLY
+
+ 10. **OPTIONAL** Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl)
+    - Make sure to install from the releases page
+    - Install respective development versions
+    - If you get a wlroots warning, you need to install strictly that version of wlroots
     
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
+
+
     
   10. OPTIONAL: Setup flatpak and flatseal:
   
