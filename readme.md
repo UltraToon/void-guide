@@ -18,24 +18,7 @@
     # xi void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
     # xi intel-ucode
     
-  3. Setup cronjobs:
-    
-    
-    # xi cronie
-    
-    # sudo vim /etc/cron.weekly/fstrim
-    <------------------------------------->
-    #!/bin/sh
-
-    fstrim /
-    <------------------------------------->
-    
-    # sudo vim /etc/cron.weekly/makewhatis
-    <------------------------------------->
-    #!/bin/sh
-    
-    makewhatis /usr/share/man
-    <------------------------------------->
+  3. Setup FSTRIM cronjob from [void docs](https://docs.voidlinux.org/config/ssd.html#periodic-trim-with-cron)
     
   5. Install dbus and elogind: OR JUST USE SEATD
   
@@ -46,12 +29,6 @@
     
     # xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau
     # xi xorg-minimal xf86-video-amdgpu
-    
-  7. Import bashrc from dotfiles and setup bash:
-    
-    # xi git
-    # curl https://raw.githubusercontent.com/UltraToon/dotfiles/main/.bashrc -o ~/.bashrc
-    # ~/.bashrc
     
   8. **OPTIONAL** Install and set these settings up if you are doing wayland:
     
@@ -65,11 +42,9 @@
     
     # xi kwayland # FOR KDE ONLY
     
-  9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html) and install easyeffects for better mic:
-  
-    # xi easyeffects
+  9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
     
-  10. Setup flatpak and flatseal:
+  10. OPTIONAL: Setup flatpak and flatseal:
   
     # xi flatpak
     # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
