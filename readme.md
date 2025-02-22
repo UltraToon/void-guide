@@ -43,8 +43,7 @@
     
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
 
-  10. Install Firefox and foot terminal
-      `# xi firefox foot`
+  10.`# xi firefox foot`
 
   12. OPTIONAL: Setup flatpak and flatseal:
   
