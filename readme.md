@@ -37,11 +37,6 @@
     makewhatis /usr/share/man
     <------------------------------------->
     
-  4. Install NTP time sync:
-    
-    # xi NTP
-    # sudo ln -s /etc/sv/ntpd /var/service/
-    
   5. Install dbus and elogind: OR JUST USE SEATD
   
     # xi dbus elogind
