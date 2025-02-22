@@ -43,9 +43,10 @@
     
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
 
+  10. Install Firefox and foot terminal
+      `# xi firefox foot`
 
-    
-  10. OPTIONAL: Setup flatpak and flatseal:
+  12. OPTIONAL: Setup flatpak and flatseal:
   
     # xi flatpak
     # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
