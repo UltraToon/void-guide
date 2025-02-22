@@ -1,12 +1,7 @@
 ## Installation Guide
-  1. Start with a GLIBC base media and do the voidlinux setup as anon sudo
+  1. Start with a GLIBC base media and do the voidlinux setup as root
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
 ### **[ Boot System ]**
-  3. Add user and visudo it since void installer wont work
-    
-    
-    # useradd -m -G input,audio,video,bluetooth,wheel,storage ivan
-    # visudo
     
 ## Post Guide
   1. Install xtools, vim, and base-devel: **HIGHLY RECOMMEND**
@@ -20,14 +15,14 @@
     
   3. Setup FSTRIM cronjob from [void docs](https://docs.voidlinux.org/config/ssd.html#periodic-trim-with-cron)
     
-  5. Install dbus and elogind: OR JUST USE SEATD
+  5. Install dbus and elogind:
   
-    `xi dbus elogind`
-    `sudo ln -s /etc/sv/dbus /var/service/`
+    # xi dbus elogind
+    # sudo ln -s /etc/sv/dbus /var/service/
 > You can also enable the elogind service if having issues. Dont install the dbus-elogind packages or such because they are dummy packages. DO NOT AVOID THESE
     
   6. Setup Graphics with Wayland
-    ##### xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau xorg-minimal xf86-amdgpu
+    > xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau xorg-minimal xf86-amdgpu
     `xi linux-firmware-amd mesa-dri mesa-vaapi mesa-vdpau vulkan-loader mesa-vulkan-radeon wlr-rander`
     `wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003`
     
