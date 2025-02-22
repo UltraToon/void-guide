@@ -24,6 +24,7 @@
   
     # xi dbus elogind
     # sudo ln -s /etc/sv/dbus /var/service/
+> You can also enable the elogind service if having issues. Dont install the dbus-elogind packages or such because they are dummy packages. DO NOT AVOID THESE
     
   6. Setup graphics and Xorg: (skip xorg if wayland)
     
