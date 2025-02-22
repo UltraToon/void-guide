@@ -42,7 +42,7 @@
     # xi NTP
     # sudo ln -s /etc/sv/ntpd /var/service/
     
-  5. Install dbus and elogind:
+  5. Install dbus and elogind: OR JUST USE SEATD
   
     # xi dbus elogind
     # sudo ln -s /etc/sv/dbus /var/service/
