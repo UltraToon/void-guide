@@ -21,10 +21,10 @@
     # sudo ln -s /etc/sv/dbus /var/service/
 > You can also enable the elogind service if having issues. Dont install the dbus-elogind packages or such because they are dummy packages. DO NOT AVOID THESE
     
-  6. Setup Graphics with Wayland
-    > xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau xorg-minimal xf86-amdgpu
-    `xi linux-firmware-amd mesa-dri mesa-vaapi mesa-vdpau vulkan-loader mesa-vulkan-radeon wlr-rander`
-    `wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003`
+  6. Setup Graphics with Wayland  
+    `xi linux-firmware-amd mesa-dri mesa-vaapi mesa-vdpau vulkan-loader mesa-vulkan-radeon wlr-rander`  
+    `wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003`  
+        >xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau xorg-minimal xf86-amdgpu  
     
   8. **OPTIONAL** Install and set these settings up if you are doing wayland:
     
