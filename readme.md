@@ -5,6 +5,7 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
   1. Start with a GLIBC base media and do the voidlinux setup as root
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
   3. Restart
+>I recommend you also make your secondary drive XFS for fast storage
 ## Post Guide
   1. Install xtools, vim, and base-devel: **HIGHLY RECOMMEND**
     # sudo xbps-install xtools vim base-devel
