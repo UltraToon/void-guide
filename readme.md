@@ -49,9 +49,9 @@ dbus-run-session dwl -s ~/dwl/autostart.sh
 
 [~/dwl/autostart.sh]
 #!/bin/sh
+wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003
 pgrep pipewire > /dev/null && pkill pipewire
 pipewire &
-wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003
 ```      
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
 
