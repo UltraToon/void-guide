@@ -2,6 +2,7 @@ https://youtu.be/VBBuSgn-sZ4?t=1130
 https://youtu.be/c9oL4RZvl6E?t=247
 https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
 https://www.reddit.com/r/unixporn/comments/16e7ovn/dwl_catppuccin/
+https://www.dwarmstrong.org/virtualization-void-linux/
 ## Installation Guide
   1. Start with a GLIBC base media and do the voidlinux setup as root
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
