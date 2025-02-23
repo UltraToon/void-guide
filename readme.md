@@ -39,8 +39,7 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
     <------------------------------------->
 
 9. Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl) **also get fcft w devel**
-    - Make sure to install from the releases page
-    - Install respective development versions
+    - Make sure to install from the releases page, do not get a git version if you hate instability.
     - If you get a wlroots warning, you need to install strictly that version of wlroots
 10. Setup this SH starting script  
 ```
