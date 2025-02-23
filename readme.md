@@ -33,7 +33,6 @@ https://youtu.be/c9oL4RZvl6E?t=247
     export QT_QPA_PLATFORM="wayland-egl"
     export ELM_DISPLAY="wl"
     export SDL_VIDEODRIVER="wayland"
-    export MOZ_ENABLE_WAYLAND=1 # only for firefox
     <------------------------------------->
 
  10. **OPTIONAL** Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl)
