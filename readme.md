@@ -28,7 +28,7 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
     `wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003`  
         >xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau xorg-minimal xf86-amdgpu  
     
-  8. **OPTIONAL** Install and set these settings up if you are doing wayland:
+8. Install and set these settings up if you are doing wayland:
     
     # vim ~/.config/bash/envrc
     <------------------------------------->
@@ -37,11 +37,11 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
     export SDL_VIDEODRIVER="wayland"
     <------------------------------------->
 
- 10. **OPTIONAL** Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl)
+9. Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl) **also get fcft w devel**
     - Make sure to install from the releases page
     - Install respective development versions
-    - If you get a wlroots warning, you need to install strictly that version of wlroots  
- 10B. **OPTIONAL** Setup this SH starting script  
+    - If you get a wlroots warning, you need to install strictly that version of wlroots
+10. Setup this SH starting script  
 ```
 [~/startdwl]
 #!/bin/sh
@@ -55,7 +55,7 @@ pipewire &
 ```      
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
 
-  10.`# xi firefox foot`
+  10.`# xi firefox foot ffmpeg`
 
   12. OPTIONAL: Setup flatpak and flatseal:
   
@@ -79,13 +79,4 @@ pipewire &
   4. Install ProtonUpQT and configure lutris-wine and proton-ge:
     
     # flatpak install flathub net.davidotek.pupgui2
-  
-  5. **OPTIONAL** Setup automatic compositing toggle with gamemode on DE's
-  
-    # sudo vim /usr/share/gamemode/gamemode.ini
-    <------------------------------------->
-    [custom]
-    start=qdbus org.kde.KWin /Compositor suspend
-    end=qdbus org.kde.KWin /Compositor resume
-    <------------------------------------->
   
