@@ -1,8 +1,8 @@
+
+https://youtu.be/c9oL4RZvl6E?t=247
 ## Installation Guide
   1. Start with a GLIBC base media and do the voidlinux setup as root
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
-### **[ Boot System ]**
-    
 ## Post Guide
   1. Install xtools, vim, and base-devel: **HIGHLY RECOMMEND**
     
