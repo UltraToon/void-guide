@@ -12,9 +12,19 @@ https://www.reddit.com/r/unixporn/comments/16e7ovn/dwl_catppuccin/
     # sudo xbps-install xtools vim base-devel
 
   2. Remove sudo
-  I create a file /etc/xbps.d/10-ignore.conf with contents:
+```
+sudo
+# vim /etc/xbps.d/10-ignore.conf
+<---------------->
 ignorepkg=sudo
-Then just xbps-remove -f sudo
+<---------------->
+# xbps-remove sudo
+# xi doas
+# vim /etc/doas.conf
+<------------------------------------------------------------->
+permit setenv {PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/us
+<-------------------------------------------------------------->
+```
 
   4. Setup other repositories for firmware and possible drivers:
     # xi void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
@@ -24,30 +34,30 @@ Then just xbps-remove -f sudo
 
   6. Setup [zram](https://wiki.archlinux.org/title/Zram#Using_a_udev_rule) and **reboot**
     
-  7. Install dbus and elogind:
+  7. **Only** Install dbus and elogind:
   
     # xi dbus elogind
-    # sudo ln -s /etc/sv/dbus /var/service/
-> You can also enable the elogind service if having issues. Dont install the dbus-elogind packages or such because they are dummy packages. DO NOT AVOID THESE
+    # sudo ln -s /etc/sv/dbus /var/service/ (might wanna do for elogind)
     
-  6. Setup Graphics with Wayland  
+8. Setup Graphics with Wayland  
     `xi linux-firmware-amd mesa-dri mesa-vaapi mesa-vdpau vulkan-loader mesa-vulkan-radeon wlr-rander`  
     `wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003`  
         >xi mesa-dri mesa-dri-32bit vulkan-loader vulkan-loader-32bit mesa-vulkan-radeon mesa-vulkan-radeon-32bit mesa-vaapi mesa-vdpau xorg-minimal xf86-amdgpu  
     
-8. Install and set these settings up if you are doing wayland:
-    
+9. Install and set these settings up if you are doing wayland:
+    ```
     # vim ~/.config/bash/envrc
     <------------------------------------->
     export QT_QPA_PLATFORM="wayland-egl"
     export ELM_DISPLAY="wl"
     export SDL_VIDEODRIVER="wayland"
     <------------------------------------->
+    ```
 
-9. Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl) **also get fcft w devel**
+10. Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl) **also get fcft w devel**
     - Make sure to install from the releases page, do not get a git version if you hate instability.
     - If you get a wlroots warning, you need to install strictly that version of wlroots
-10. Setup this SH starting script  
+11. Setup this SH starting script  
 ```
 [~/startdwl]
 #!/bin/sh
