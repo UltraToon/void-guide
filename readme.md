@@ -4,17 +4,18 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
 ## Installation Guide
   1. Start with a GLIBC base media and do the voidlinux setup as root
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
+  3. Restart
 ## Post Guide
   1. Install xtools, vim, and base-devel: **HIGHLY RECOMMEND**
-    
     # sudo xbps-install xtools vim base-devel
 
   2. Setup other repositories for firmware and possible drivers:
-    
     # xi void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
     # xi intel-ucode
     
   3. Setup FSTRIM cronjob from [void docs](https://docs.voidlinux.org/config/ssd.html#periodic-trim-with-cron)
+
+  4. Setup [zram](https://wiki.archlinux.org/title/Zram#Using_a_udev_rule) and **reboot**
     
   5. Install dbus and elogind:
   
