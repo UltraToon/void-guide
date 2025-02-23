@@ -40,7 +40,7 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
  10. **OPTIONAL** Install DWL with [dependencies](https://codeberg.org/dwl/dwl#building-dwl)
     - Make sure to install from the releases page
     - Install respective development versions
-    - If you get a wlroots warning, you need to install strictly that version of wlroots
+    - If you get a wlroots warning, you need to install strictly that version of wlroots  
  10B. **OPTIONAL** Setup this SH starting script  
 ```
 [~/startdwl]
