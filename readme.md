@@ -11,15 +11,20 @@ https://www.reddit.com/r/unixporn/comments/16e7ovn/dwl_catppuccin/
   1. Install xtools, vim, and base-devel: **HIGHLY RECOMMEND**
     # sudo xbps-install xtools vim base-devel
 
-  2. Setup other repositories for firmware and possible drivers:
+  2. Remove sudo
+  I create a file /etc/xbps.d/10-ignore.conf with contents:
+ignorepkg=sudo
+Then just xbps-remove -f sudo
+
+  4. Setup other repositories for firmware and possible drivers:
     # xi void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
     # xi intel-ucode
     
-  3. Setup FSTRIM cronjob from [void docs](https://docs.voidlinux.org/config/ssd.html#periodic-trim-with-cron)
+  5. Setup FSTRIM cronjob from [void docs](https://docs.voidlinux.org/config/ssd.html#periodic-trim-with-cron)
 
-  4. Setup [zram](https://wiki.archlinux.org/title/Zram#Using_a_udev_rule) and **reboot**
+  6. Setup [zram](https://wiki.archlinux.org/title/Zram#Using_a_udev_rule) and **reboot**
     
-  5. Install dbus and elogind:
+  7. Install dbus and elogind:
   
     # xi dbus elogind
     # sudo ln -s /etc/sv/dbus /var/service/
