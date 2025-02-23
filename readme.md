@@ -41,10 +41,15 @@ https://youtu.be/c9oL4RZvl6E?t=247
     - If you get a wlroots warning, you need to install strictly that version of wlroots
  10B. **OPTIONAL** Setup this SH starting script  
 ```
+[~/startdwl]
 #!/bin/sh
-wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003
+dbus-run-session dwl -s ~/dwl/autostart.sh
+
+[~/dwl/autostart.sh]
+#!/bin/sh
+pgrep pipewire > /dev/null && pkill pipewire
 pipewire &
-dwl
+wlr-randr --output HDMI-A-1 --mode 1920x1080@143.981003
 ```      
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
 
