@@ -56,7 +56,7 @@ pipewire &
 ```      
   9. Setup pipewire-pulse from the [void docs](https://docs.voidlinux.org/config/media/pipewire.html)
 
-  10.`# xi firefox foot ffmpeg`
+  10.`# xi firefox foot ffmpeg slstatus`
 
   12. OPTIONAL: Setup flatpak and flatseal:
   
