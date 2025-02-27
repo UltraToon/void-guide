@@ -86,7 +86,7 @@ pipewire &
 ## Desktop Guide (Install GUI Terminal and Browser!)
   1. Install fonts and emojis:
     
-    # xi noto-fonts-emoji noto-fonts-ttf noto-fonts-ttf-extra
+    # xi noto-fonts-emoji noto-fonts-ttf noto-fonts-ttf-extra noto-fonts-cjk #japanese
     
   2. Setup steam, lutris, wine, and gamemode:
     
