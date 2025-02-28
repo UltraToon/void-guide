@@ -75,12 +75,9 @@ pipewire &
 
   10.`# xi firefox foot ffmpeg slstatus`
 
-  12. OPTIONAL: Setup flatpak and flatseal:
-  
-    # xi flatpak
-    # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    # sudo reboot
+  12. OPTIONAL: Setup [flatpak](https://flathub.org/setup/Void%20Linux) and flatseal:
     # flatpak install flatseal
+
   ### [ **Now Reboot** ]
     
 ## Desktop Guide (Install GUI Terminal and Browser!)
