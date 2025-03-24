@@ -4,6 +4,7 @@ https://gist.github.com/robotamer/918d0f1dbfcf88e6ed8abb103d1336b6
 https://www.reddit.com/r/unixporn/comments/16e7ovn/dwl_catppuccin/
 https://www.dwarmstrong.org/virtualization-void-linux/  
 setup void xdg
+https://www.reddit.com/r/voidlinux/comments/o74i76/pipewire_rtkit_warnings/
 https://gist.github.com/Piraty/2e8c9fa86d4eb70f22efb9e0ecdda235
 sudo xbps-install wlroots wlroots-devel wayland-protocols wbg wlr-randr xdg-desktop-portal-wlr
 ## Installation Guide
