@@ -7,6 +7,7 @@ setup void xdg
 https://www.reddit.com/r/voidlinux/comments/o74i76/pipewire_rtkit_warnings/
 https://gist.github.com/Piraty/2e8c9fa86d4eb70f22efb9e0ecdda235
 sudo xbps-install wlroots wlroots-devel wayland-protocols wbg wlr-randr xdg-desktop-portal-wlr
+https://github.com/ublue-os/bazzite/#about--features
 ## Installation Guide
   1. Start with a GLIBC base media and do the voidlinux setup as root
   2. Set up partitions as 256M-512M EFI and rest to a EXT4 RootFS (Will setup a zram block later)
